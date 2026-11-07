@@ -1,0 +1,26 @@
+{
+  "id": "my.home.hello",
+  "version": "0.1.0",
+  "module": "hello",
+  "trust": "community",
+  "author": "your-github-name",
+  "icon": "spark",
+  "name": {"en": "Hello", "uk": "Привіт", "ru": "Привет"},
+  "description": {
+    "en": "Example extension: a counter device, a flow trigger and a page",
+    "uk": "Приклад розширення: пристрій лічильник, тригер сценарію і сторінка",
+    "ru": "Пример расширения: устройство счетчик, триггер сценария и страница"
+  },
+  "perms": ["devices.virtual", "ui.page"],
+  "settings": [
+    {"key": "period", "type": "number", "default": 60, "name": {"en": "Period, s", "uk": "Період, с", "ru": "Период, с"}},
+    {"key": "every", "type": "number", "default": 10, "name": {"en": "Trigger every N ticks", "uk": "Тригер кожні N тактів", "ru": "Триггер каждые N тактов"}}
+  ],
+  "blocks": [
+    {"key": "round", "kind": "trig", "icon": "spark", "name": {"en": "Hello: round number", "uk": "Привіт: кругле число", "ru": "Привет: круглое число"}}
+  ],
+  "pages": [
+    {"key": "hello", "icon": "spark", "level": "declarative", "name": {"en": "Hello", "uk": "Привіт", "ru": "Привет"}}
+  ],
+  "runtime": {"memory": 64, "cpu": 10}
+}
